@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Note App JS</title>
+  </head>
+  <body>
+    <div class="app" id="app">
+      <header>
+        <h1>Note App</h1>
+        <form class="note-form" id="note-form">
+          <input
+            type="text"
+            name="note-title"
+            id="note-title"
+            placeholder="Add note title"
+          />
+          <textarea
+            name="note-body"
+            id="note-body"
+            cols="5"
+            rows="7"
+            placeholder="Add note..."
+          ></textarea>
+          <button class="btn btn-add" id="note-submit">ADD NOTE</button>
+        </form>
+      </header>
+      <main>
+        <ul class="notes-list" id="notes-list"></ul>
+      </main>
+      <footer>copyright goes here</footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
